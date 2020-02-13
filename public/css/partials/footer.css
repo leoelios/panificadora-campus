@@ -1,0 +1,23 @@
+.footer-full {
+    background-color: rgb(194, 160, 115);
+    padding: 40px 20px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-campus {
+    color: rgb(42, 73, 42);
+    cursor: pointer;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.loc-end {
+    margin: 5px 30px;
+}

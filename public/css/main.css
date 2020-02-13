@@ -1,0 +1,9 @@
+.main-content {
+    height: 100%;
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: url("/img/donut.jpg");
+    background-size: cover;
+    animation: changeBackground 15s infinite;
+}

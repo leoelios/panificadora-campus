@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial;
+    color: rgb(54, 43, 37);
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+}

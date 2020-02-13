@@ -1,0 +1,18 @@
+{
+  "name": "panificadora-campus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": "https://github.com/leoelias023/panificadora-campus.git",
+  "author": "Leonardo Elias <leoelias02@hotmail.com>, Victor Pizzaia",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  }
+}
