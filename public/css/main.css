@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+body {
+    background-color: #46301C;
+}
+
 .main-full {
     height: 100%;
     z-index: 0;
@@ -21,10 +25,10 @@
 
 @keyframes sliderImage {
     0% {
-        opacity: 0.6;
+        transform: translateY(-100%);
     }
     10% {
-        opacity: 1;
+        transform: translateY(0%);
     }
 }
 

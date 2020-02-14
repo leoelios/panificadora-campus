@@ -50,12 +50,21 @@ body {
     width: 100px !important;
 }
 
+.accountIs {
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.neg-account {
+    color: #fff;
+}
+
 #btn-continue-register {
     padding: 10px;
     border-radius: 40px;
     border: none;
     width: 30%;
-    margin-top: 40px;
     cursor: pointer;
     font-size: 1.3em;
     background-color: #DDBD93;
@@ -139,6 +148,7 @@ body {
         display: none;
     }
     .centered-content {
+        margin-top: 0px !important;
         width: 100%;
     }
     #btn-continue-register {
