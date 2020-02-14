@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(85, 160, 154);
+}
+
+* {
+    animation: slugElement 1s;
+}
+
+@keyframes slugElement {
+    0% {
+        transform: scale(0.1);
+    }
+}
+ 
+.content-full-margin {
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-white {
+    color: rgb(230, 230, 230);
+}
+
+.centered-content {
+    transition: width 1s;
+    overflow: hidden;
+    padding: 20px;
+    background-color: rgb(69, 132, 138);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    align-items: center;
+}
+
+.form-control {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.numberAge {
+    width: 100px !important;
+}
+
+#btn-continue-register {
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    width: 30%;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 1.3em;
+    background-color: #DDBD93;
+    transition: width 0.2s;
+}
+
+
+#btn-continue-register:hover {
+    width: 80%;
+}
+
+.btn-submit-cad {
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    width: 30%;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 1.3em;
+    background-color: #DDBD93;
+    transition: width 0.2s;
+}
+
+
+.btn-submit-cad:hover {
+    width: 80%;
+}
+
+
+
+.title-cad-user {
+    transition: font-size 1s;
+    font-size: 2.7em;
+    text-align: center;
+}
+
+.desc-cad-user {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+}
+
+.desc-top-form {
+    margin-bottom: 40px;
+}
+
+#title-site {
+    font-size: 2em;
+}
+
+#form-before {
+    transition: height 1s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-continue {
+    transition: height 1s;
+    width: 100%;
+    height: 0px;
+    background-color: rgb(228, 228, 228);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.continue-cad-form-after {
+    height: 500px !important;
+}
+
+@media (max-width: 757px) {
+    .title-cad-user {
+        font-size: 1.5em;
+    }
+    .desc-cad-user {
+        display: none;
+    }
+    .centered-content {
+        width: 100%;
+    }
+    #btn-continue-register {
+        width: 80%;
+    }
+    .form-control {
+        margin-top: 0px;
+    }
+}
+
+
+.continue-cad-form-before {
+    height: 0px !important;
+    overflow: hidden;
+}
+
+#btn-voltar-form {
+    background-color: rgb(192, 192, 192);
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#btn-voltar-form i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.btn-session {
+    position: relative;
+    top: -40px;
+    left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}

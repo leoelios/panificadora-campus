@@ -1,7 +1,25 @@
+// Configurations
+listPhotosSlider = ['donut','pao'];
+
 
 function openService(serviceName) {
+    listServices = [
+        'drink',
+        'coffe',
+        'bread',
+        'candy'
+    ];
+    listServices.splice(listServices.indexOf(serviceName), 1);
+    for(var i = 0; i < listServices.length; i++) {
+        const elementList = document.getElementById(listServices[i]+"-service");
+        elementList.classList.add("height-zero");
+    }
     const text = document.getElementById(serviceName+"-service");
     text.classList.toggle("height-zero");
+}
+
+function verifyOpened(listServices) {
+    const text = document.getElementById(serviceName+"-service");
 }
 
 const candyBtn = document.getElementById("service-candy");
@@ -24,25 +42,22 @@ coffeBtn.addEventListener('click', () => {
     openService("coffe");
 });
 
-const displayBack = document.getElementById("main-content");
-function changeBack() {
-    backPao();
-    backDonut();
-}
 
-function backPao() {
-    displayBack.style.backgroundImage = 'url("img/pao-wall.jpg")';
-}
 
+const backDisplay = document.getElementById("main-content");
+
+listCont = 0;
 setInterval(() => {
-   backPao();
+    if(listCont < listPhotosSlider.length - 1) {
+        nextPix(listPhotosSlider[listCont]);
+        listCont++;
+    }
+    else {
+        nextPix(listPhotosSlider[listCont]);
+        listCont = 0;
+    }
 } , 10000);
 
-setInterval(() => {
-    backDonut();
-}, 20000);
-
-
-function backDonut() {
-    displayBack.style.backgroundImage = 'url("img/donut.jpg")';
+function nextPix(listPhotosSlider) {
+    backDisplay.classList.toggle('back-'+listPhotosSlider);
 }

@@ -27,12 +27,17 @@
 
 .img-coffe {
     font-size: 17em;
+    color: #46301C;
 }
 
 .end-text {
     display: flex;
-    flex: 0.5;
+    flex: 0.3;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
+
+.color-text {
+    color: rgb(66, 51, 36);
 }

@@ -46,7 +46,7 @@
 .list-nav a {
     font-size: 1.3em;
     margin: 0px 20px;
-    padding: 10px 20px;
+    padding: 6px 20px;
     transition: padding 0.3s;
     border-radius: 40px;
     font-size: 1.1em;
@@ -58,6 +58,10 @@
 
 .list-nav a:hover {
     background-color: rgb(184, 148, 115);
+}
+
+.nav-btn {
+    background-color: rgb(184, 148, 115); 
 }
 
 .nav-header {

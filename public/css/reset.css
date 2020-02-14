@@ -6,8 +6,35 @@
     font-family: Arial;
     color: rgb(54, 43, 37);
     box-sizing: border-box;
+    outline: none;
 }
 
 body,html {
     height: 100%;
+}
+
+.color-whit-flask {
+    color: rgb(226, 226, 226);
+}
+
+.font-fina {
+    font-weight: 100;
+}
+
+input {
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+input[type="text"],input[type="number"],input[type="password"] {
+    width: 70%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus {
+    border: 3px solid #DDBD93;
 }
