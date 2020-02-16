@@ -1,48 +1,35 @@
 <link rel="stylesheet" href="/css/client/cadastro.css">
-<div class="content-full-margin">
-    <div class="centered-content">
-        <form action="/" method="POST" class="form-control">
-            <div id="form-before">
-                <!-- Criar requisicao POST para a API -->
-                <div class="desc-top-form">
-                    <h2 class="color-white font-fina title-cad-user">Se cadastre para fazer uma nova encomenda!</h2>
-                    <span class="color-whit-flask desc-cad-user">Vai ser bem rapidinho, fique tranquilo.</span>   
-                </div>
-                <input 
-                    type="text" 
-                    placeholder="Digite aqui seu nome..." 
-                    name="name" 
-                    spellcheck="false" 
-                />
-                <input 
-                    type="text" 
-                    placeholder="Agora digite o sobrenome" 
-                    name="surname" 
-                    spellcheck="false" 
-                /> 
-                <div class="line-form">
-                    <label for="age" class="color-white">Idade: </label>
-                    <input type="number" min="1" class="numberAge" placeholder="00" id="age" name="age" spellcheck="false" />
-                </div>
-                <a href="/cliente/login" class="accountIs">Já possui uma conta? <b class="neg-account">Faça o login</b></a>
-                <button type="button" id="btn-continue-register">Continuar</button>
+<div class="centered-content">
+    <form action="/" method="POST" class="form-control">
+        <div id="form-before">
+            <!-- Criar requisicao POST para a API -->
+            <div class="desc-top-form">
+                <h2 class="color-white font-fina title-cad-user">Se cadastre para fazer uma nova encomenda!</h2>
+                <span class="color-whit-flask desc-cad-user">Vai ser bem rapidinho, fique tranquilo.</span>
             </div>
-            <div id="form-continue">
-                <div class="btn-session">
-                    <button type="button" id="btn-voltar-form">
-                        <i class="fas fa-arrow-left"></i>
-                        Voltar
-                    </button>
-                </div>
-                <input type="text" name="email" placeholder="Email">
-                <input type="text" id="telefone" placeholder="(00) 00000-0000" name="cel" maxlength="15">
-                <input type="password" name="password" placeholder="Senha">
-                <input type="password" name="comfirmPassword" placeholder="Confirme sua senha">
-                <input type="submit" class="btn-submit-cad" value="Finalizar" />
+            <input type="text" placeholder="Digite aqui seu nome..." name="name" spellcheck="false" />
+            <input type="text" placeholder="Agora digite o sobrenome" name="surname" spellcheck="false" />
+            <div class="line-form">
+                <label for="age" class="color-white">Idade: </label>
+                <input type="number" min="1" class="numberAge" placeholder="00" id="age" name="age"
+                    spellcheck="false" />
             </div>
-        </form>
-    </div>
+            <a href="/cliente/login" class="accountIs">Já possui uma conta? <b class="neg-account">Faça o login</b></a>
+            <button type="button" id="btn-continue-register">Continuar</button>
+        </div>
+        <div id="form-continue">
+            <div class="btn-session">
+                <button type="button" id="btn-voltar-form">
+                    <i class="fas fa-arrow-left"></i>
+                    Voltar
+                </button>
+            </div>
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" id="telefone" placeholder="(00) 00000-0000" name="cel" maxlength="15">
+            <input type="password" name="password" placeholder="Senha">
+            <input type="password" name="comfirmPassword" placeholder="Confirme sua senha">
+            <input type="submit" class="btn-submit-cad" value="Finalizar" />
+        </div>
+    </form>
 </div>
-
-
 <script src="/js/client/cadastro.js"></script>

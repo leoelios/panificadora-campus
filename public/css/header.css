@@ -1,5 +1,7 @@
 .logo-pani {
-    width: 200px;
+    width: 170px;
+    margin-top: 50px;
+    transition: width 0.3s, margin 0.3s;
 }
 
 .header-full {
