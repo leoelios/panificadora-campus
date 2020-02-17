@@ -15,10 +15,12 @@ const PORT = 3333;
 // Import internal modules
     const mainRt = require('./routes/mainRt');    
     const clientRt = require('./routes/clientRt');
+    const encomendaRt = require('./routes/encomendaRt');
 
 // Routes
     app.use('/', mainRt);
     app.use('/cliente', clientRt);
+    app.use('/encomenda', encomendaRt);
 
 app.listen(PORT, () => {
     console.log('servidor aberto na porta: '+PORT);

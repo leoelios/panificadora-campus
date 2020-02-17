@@ -9,7 +9,7 @@
 }
 
 .name-campus {
-    color: rgb(42, 73, 42);
+    color: rgb(20, 74, 78);
     cursor: pointer;
 }
 
@@ -19,5 +19,17 @@
 }
 
 .loc-end {
-    margin: 5px 30px;
+    margin: 10px 30px 30px 30px;
+}
+
+.logo-footer {
+    width: 200px;
+}
+
+.copy-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }

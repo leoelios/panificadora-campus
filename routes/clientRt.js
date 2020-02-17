@@ -9,8 +9,4 @@ router.get('/login', (req,res) => {
     res.render('client/login');
 })
 
-router.get('/encomenda', (req,res) => {
-    res.render('client/encomenda');
-})
-
 module.exports = router;

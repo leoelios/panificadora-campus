@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/partials/header.css">
 <script src="https://kit.fontawesome.com/e26c2674eb.js" crossorigin="anonymous"></script>
 <header id="header-full" class="header-full">
     <!-- TEXTO OU IMAGEM
@@ -10,21 +10,7 @@
     <img id="title-site" src="/img/panificadora-sem-fundo.png" alt="Logo da panificadora" class="logo-pani" />
     <nav class="nav-header">
         <ul class="list-nav">
-            <a href="/">
-                <li>Home</li>
-            </a>
-            <a href="/about">
-                <li>Sobre</li>
-            </a>
-            <a href="/catalogo">
-                <li>Produtos</li>
-            </a>
-            <a href="/cliente/login">
-                <li>Login</li>
-            </a>
-            <a class="nav-btn" href="/cliente/cadastro">
-                <li>Fazer encomenda</li>
-            </a>
+            {{>listNav}}
         </ul>
     </nav>
     <nav class="nav-mobile">
@@ -41,15 +27,7 @@
     </nav>   
     <nav class="nav-header-mobile">
         <ul class="list-nav-mobile">
-            <a href="/">
-                <li>Home</li>
-            </a>
-            <a href="/about">
-                <li>Sobre</li>
-            </a>
-            <a href="/catalogo">
-                <li>Produtos</li>
-            </a>
+            {{>listNav}}
         </ul>
     </nav>
 </div>
