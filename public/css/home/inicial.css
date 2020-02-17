@@ -16,6 +16,21 @@
     padding: 10px 15px;
 }
 
+#title-main {
+    color: #fff;
+}
+
+#cursor {
+    color: rgb(41, 159, 180);
+    animation: blinking 0.6s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+}
+
 .desc-main {
     color: #fff;
     margin: 30px;

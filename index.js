@@ -16,11 +16,13 @@ const PORT = 3333;
     const mainRt = require('./routes/mainRt');    
     const clientRt = require('./routes/clientRt');
     const encomendaRt = require('./routes/encomendaRt');
-
+    const adminRt = require('./routes/adminRt');
+    
 // Routes
     app.use('/', mainRt);
     app.use('/cliente', clientRt);
     app.use('/encomenda', encomendaRt);
+    app.use('/painel', adminRt);
 
 app.listen(PORT, () => {
     console.log('servidor aberto na porta: '+PORT);
