@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const api = require('../services/api');
 
 // Implementar middlaware passport authentication
 
