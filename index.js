@@ -4,6 +4,7 @@ const PORT = 3333;
 
 // Middlawares
     app.use(express.json());
+    app.use(express.urlencoded({extended: true}))
     app.use(express.static('public'));
 
 // EXTERNAL MODULES

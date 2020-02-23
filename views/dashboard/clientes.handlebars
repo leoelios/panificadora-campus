@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/dashboard/clientes.css">
+<link rel="stylesheet" href="/css/dashboard/checkbox.css">
+    <css></css>
+<div class="head-title">
+    <h2>Esses são os clientes cadastrados em seu sistema</h2>
+</div>
+<div class="table-user">
+    <div class="search-user">
+        <form action="/" method="POST" class="form-control">
+            <i class="fas fa-search icon-search"></i>
+            <input 
+                type="text" 
+                name="clientData" 
+                class="input-dat"
+                spellcheck="false"
+            >
+        </form>
+    </div>
+    <table>
+        <tr class="head-line">
+            <td>
+                Nome
+            </td>
+            <td>
+               Sobrenome
+            </td>
+            <td>
+                Idade
+            </td>
+            <td>
+                Cel
+            </td>
+            <td>
+                Email
+            </td>
+        </tr>
+        <tr class="body-line">
+            <td>
+                <span class="cel-table">Carlos Alberto</span>
+            </td>
+            <td>
+                <span class="cel-table">de Nobrega</span>
+            </td>
+            <td>
+                <span class="cel-table">33</span>
+            </td>
+            <td>
+                <span class="cel-table">(16) 99379-8356</span>
+            </td>
+            <td>
+                <span class="cel-table">carlinhos666@gmail.com</span>
+            </td>
+            <td class="check-sy">
+                <label class="control control-checkbox">
+                    <input type="checkbox" class="checkUser" />
+                    <div class="control_indicator"></div>
+                </label>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<script src="/js/dashboard/clientes.js"></script>

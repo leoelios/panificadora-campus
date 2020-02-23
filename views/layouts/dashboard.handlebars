@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="/css/reset.css">
     <script src="https://kit.fontawesome.com/e26c2674eb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/dashboard/index.css">
+    <link rel="stylesheet" href="/css/dashboard/animation.css">
     <title>Campus Ville - Admin</title>
 </head>
 <body>
-    {{>dashboard/header}}
-    {{{body}}}
+    <div class="content-full-dashboard">
+        {{>dashboard/header}}
+        <div class="dashboard-content">
+            {{{body}}}
+        </div>
+    </div>
 </body>
-<script src="/js/dashboard/header-user.js"></script>
 </html>

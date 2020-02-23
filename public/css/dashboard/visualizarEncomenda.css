@@ -1,0 +1,169 @@
+.box-encomenda-ld {
+    background-color: rgb(226, 225, 225);
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px;
+    animation: slug-element 0.3s;
+}
+
+.total-encomenda {
+    display: flex;
+    flex-direction: row;
+}
+
+.data-client {
+    width: 50%;
+}
+
+.end-client {
+    width: 50%;
+}
+
+.sobre-encomenda {
+    margin: 100px;
+    margin-bottom: 20px;
+}
+
+.about-encomenda {
+    margin: 30px;
+}
+
+.total-list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ld {
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.real {
+    transition: max-height 0.5s, padding 0.5s;
+    max-height: 0px;
+    padding: 0px 30px;
+    overflow: hidden;
+}
+
+.realVisible {
+    max-height: 1000px !important;
+    padding: 30px;
+}
+
+.list-products-ld {
+    width: 80%;
+    background-color: rgb(226, 225, 225);
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 200px;
+    animation: slug-element 0.3s;
+}
+
+.back-arrow {
+    margin: 30px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.title-prod {
+    font-weight: 100;
+}
+
+.product-item-ld {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 20px;
+    margin: 30px;
+    animation: slug-element 0.3s, loading-element 1s infinite;
+}
+
+.elementsClosed {
+    height: 0px;
+}
+
+.box-encomenda-real {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-products-real {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    max-height: 0px;
+    transition: max-height 0.4s, padding 0.3s;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.title-list {
+    margin-top: 40px;
+}
+
+.img-product {
+    width: 50px;
+    height: 50px;
+}
+
+.name-client {
+    font-size: 1.3em;
+    color: rgb(11, 13, 77);
+    margin-bottom: 20px;
+}
+
+.wei-nu {
+    font-size: 1.2em;
+    color: rgb(11, 13, 77);
+}
+
+.localization {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.central-control {
+    background-color: rgb(199, 199, 199);
+    width: calc(100% - 300px);
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    left: 300px;
+}
+
+.btn-control {
+    background-color: #3273AC;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.fin-ped {
+    background-color: rgb(49, 57, 163);
+}
+
+.control-ped {
+    color: rgb(48, 48, 48);
+}
