@@ -162,3 +162,24 @@ body {
     text-align: center;
     margin: 0 20%;
 }
+
+@media(max-width: 973px){
+    .main-total{
+        padding-top: 250px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .aside-category {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .title-sec{
+        padding: 40px;
+        top: 0;
+        padding-top: 150px;
+        position: absolute;
+        width: 100%;
+    }
+}

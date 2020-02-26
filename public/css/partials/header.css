@@ -62,9 +62,9 @@
     background-color: rgb(184, 148, 115);
 }
 
-.nav-btn {
+/*.nav-btn {
     background-color: rgb(184, 148, 115); 
-}
+}*/
 
 .nav-header {
     display: flex;
@@ -107,7 +107,7 @@
     height: 0px;
 }
 
-@media (max-width: 811px) {
+@media (max-width: 960px) {
     .nav-header {
         display: none;
     }
@@ -116,6 +116,20 @@
     }
     .title-pad h1 {
         font-size: 1.9em;
+    }
+    .mobile-extension{
+        background-color: #DDBD93;
+    }
+    li{
+        background-color: #b89473;
+        width: 60%;
+        height: 50px;
+        padding-top: 18px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 4%;
     }
 }
 

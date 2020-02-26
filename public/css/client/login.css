@@ -3,7 +3,7 @@ body {
 }
 
 .content-full-margin {
-    padding-top: 100px;
+    padding-top: 70px !important;
     width: 100%;
     height: auto !important;
     display: flex;
@@ -17,9 +17,9 @@ body {
 }
 
 .centered-content {
-    margin-top: 40px;
+    margin-top: 10px;
     transition: width 1s;
-    padding: 20px;
+    padding: 50px;
     background-color: rgba(255, 255, 255, 0) !important;
     border-radius: 40px;
     display: flex;

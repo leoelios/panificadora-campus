@@ -1,7 +1,7 @@
 .localization {
     padding: 50px;
     width: 100%;
-    background-color: rgb(117, 98, 74);
+    background-color: #614242;
 }
 
 .map {
@@ -27,9 +27,17 @@
 
 .img-coffe {
     font-size: 17em;
-    color: #46301C;
+    /*color: #46301C;*/
+    color: #ffffff;
 }
-
+@media(max-width: 905px){
+    .map{
+        width: 100%;
+    }
+    .desc-map{
+        display: none;
+    }
+}
 .end-text {
     display: flex;
     flex: 0.3;
@@ -39,5 +47,5 @@
 }
 
 .color-text {
-    color: rgb(66, 51, 36);
+    color: #ffffff;
 }
