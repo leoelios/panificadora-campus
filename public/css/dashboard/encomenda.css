@@ -1,0 +1,98 @@
+.title-head {
+    margin: 0px 50px;
+    margin-top: 30px;
+    color: #0C0D1D;
+}
+
+.descript-head {
+    margin-bottom: 30px;
+}
+
+.centered-acess {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slug-element 0.3s;
+}
+
+.central-btn {
+    width: 80%;
+    background-color: rgb(174, 185, 214);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-item {
+    width: 150px;
+    margin: 20px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-item:hover {
+    background-color: rgb(196, 199, 228);
+}
+
+.icon-btn {
+    margin-bottom: 10px;
+    color: #0C0D1D;
+    font-size: 3em;
+}
+
+.title-btn {
+    text-align: center;
+    color: #0C0D1D;
+}
+
+.list-pedidos {
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #AEB9D6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-pedidos {
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-size: 1.3em;
+}
+
+.lista-pedidos {
+    border-spacing: 10px;
+    border-radius: 20px;
+}
+
+.link-acess-data {
+    background-color: rgb(43, 64, 158) !important;
+    width: 50px;
+    padding: 0px !important;
+    border-radius: 50%;
+    position: relative;
+    left: 10px;
+}
+
+.link-acess-data:hover {
+    background-color: rgb(66, 114, 216) !important;
+}
+
+.icon-see {
+    width: 50px;
+    color: #fff;
+    padding: 10px 0px;
+}
