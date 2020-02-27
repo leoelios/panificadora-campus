@@ -11,8 +11,8 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body,html {
-    height: 100%;
+body, html {
+    height: auto;
 }
 
 .color-whit-flask {

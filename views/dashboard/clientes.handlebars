@@ -6,11 +6,11 @@
 </div>
 <div class="table-user">
     <div class="search-user">
-        <form action="/" method="POST" class="form-control">
+        <form action="/painel/clientes" method="GET" class="form-control">
             <i class="fas fa-search icon-search"></i>
             <input 
                 type="text" 
-                name="clientData" 
+                name="q" 
                 class="input-dat"
                 spellcheck="false"
             >
@@ -34,30 +34,30 @@
                 Email
             </td>
         </tr>
-        <tr class="body-line">
-            <td>
-                <span class="cel-table">Carlos Alberto</span>
-            </td>
-            <td>
-                <span class="cel-table">de Nobrega</span>
-            </td>
-            <td>
-                <span class="cel-table">33</span>
-            </td>
-            <td>
-                <span class="cel-table">(16) 99379-8356</span>
-            </td>
-            <td>
-                <span class="cel-table">carlinhos666@gmail.com</span>
-            </td>
-            <td class="check-sy">
-                <label class="control control-checkbox">
-                    <input type="checkbox" class="checkUser" />
-                    <div class="control_indicator"></div>
-                </label>
-            </td>
-        </tr>
+        {{#each clients}}
+            <tr class="body-line">
+                <td>
+                    <span class="cel-table">{{name}}</span>
+                </td>
+                <td>
+                    <span class="cel-table">{{surname}}</span>
+                </td>
+                <td>
+                    <span class="cel-table">{{birthday}}</span>
+                </td>
+                <td>
+                    <span class="cel-table">{{cel}}</span>
+                </td>
+                <td>
+                    <span class="cel-table">{{email}}</span>
+                </td>
+                <td class="check-sy">
+                    <label class="control control-checkbox">
+                        <input type="checkbox" class="checkUser" />
+                        <div class="control_indicator"></div>
+                    </label>
+                </td>
+            </tr>
+        {{/each}}
     </table>
 </div>
-
-<script src="/js/dashboard/clientes.js"></script>

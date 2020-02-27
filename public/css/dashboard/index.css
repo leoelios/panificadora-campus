@@ -203,3 +203,8 @@ td {
     padding: 10px 15px;
     border-radius: 20px;
 }
+
+body,html {
+    height: auto;
+    background-color: #E9E9E9;
+}
