@@ -1,13 +1,15 @@
-<h1>Cadastre um novo produto</h1>
+<h1 class="title-sec-product">Cadastre um novo produto</h1>
 <div class="form-control">
-    <form class="form-total" enctype='multipart/form-data'  action="http://localhost:3334/product/cadastrar" method="POST">
+    <form class="form-total" enctype='multipart/form-data'  action="/painel/produtos/cadastro" method="POST">
         <div class="image-multi">
-            <div class="display-image">
-                <span id="text-preview-image">
-                    <i class="far fa-image"></i>
-                </span>
-                <img id="img-previewed" src="" alt="Pré-visualização do produto">
-            </div>
+            <label for="inp-image">
+                <div class="display-image">
+                    <span id="text-preview-image">
+                        <i class="far fa-image"></i>
+                    </span>
+                    <img id="img-previewed" src="" alt="Pré-visualização do produto">
+                </div>
+            </label>
             <div class="input-camp">
                 <label for="inp-image" class="input-image-label">Escolher imagem</label>
                 <input id="inp-image" type="file" name="img">

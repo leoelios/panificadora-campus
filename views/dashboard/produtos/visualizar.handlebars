@@ -1,1 +1,27 @@
-<h1>Visualizar</h1>
+<h1 class="title-sec-product">Visualizar</h1>
+<div class="search-products">
+    <i class="fas fa-search"></i>
+    <form action="/painel/produtos/visualizar" method="GET" class="form-search">
+        <input type="text" id="inp-search-product" name="q" class="search">
+    </form>
+</div>
+<div class="index-products">
+    {{#each products}}
+        <div class="product-item">
+            <div class="right">
+                <img src="https://res.cloudinary.com/dpbse0jxf/image/upload/v1582907444/lb6fl6ziqsqpnb2gvi0x.jpg" alt="Fotografia do produto" class="photoProduct" />
+            </div>
+            <div class="left">
+                <h2 class="nameProduct">
+                    {{name}}
+                </h2>
+                <p>
+                    {{desc}}
+                </p>
+                <span class="priceProduct">
+                    R$ {{price}}
+                </span>
+            </div>
+        </div>
+    {{/each}}
+</div>
