@@ -1,0 +1,21 @@
+<div class="box-content-about-product">
+    <h2 class="title-sec-product product-info-title">{{product.name}}</h2>
+    <div class="img-and-config">
+        <img src="{{product.imgUrl}}" class="infoImage"/>
+        <div class="about-info">
+            <h3 class="output-price">Preço: R$ {{product.price}}</h3>
+            <h3>Descrição:</h3>
+            <p class="output-info">
+              {{product.desc}}  
+            </p>
+        </div>
+        <div class="btn-config">
+            <a class="btn-config-info" href="/painel/produto/info/{{product._id}}/delete">
+                <i class="fas fa-trash-alt icon-config"></i>
+            </a>
+            <a class="btn-config-info" href="/painel/produto/info/{{product._id}}/update">
+                <i class="fas fa-edit icon-config"></i>
+            </a>
+        </div>
+    </div>
+</div>

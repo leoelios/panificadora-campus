@@ -34,6 +34,7 @@ const verifyLogIn = require('./helpers/isAdmin');
     app.use(express.static('public'));
     app.use( (req, res, next) => {
         res.locals.error = req.flash('error');
+        res.locals.success = req.flash('success');
         if(req.user) {
             const LogClient = {
                 name: req.user.name,

@@ -1,0 +1,25 @@
+<div class="edit-product">
+    <form method="POST" action="/painel/produto/info/atualizar">
+        <h2>Editar o(a) {{product.name}}</h2>
+        <div class="form-control">
+            <input type="hidden" name="id" value="{{product._id}}" />
+            <div class="form-item">
+                <label for="name">Nome do Produto: </label>
+                <input type="text" name="name" value="{{product.name}}">
+            </div>
+            <div class="form-item">
+                <label for="price">Preço: </label>
+                <input type="number" name="price" value="{{product.price}}">
+            </div>
+            <div class="form-item">
+                <label for="desc">Descrição: </label>
+                <textarea class="desc-text" name="desc" type="text" >{{product.desc}}</textarea>
+            </div>
+        </div>
+        <div class="end-buttons">
+            <button class="btn-confirm-edit">
+                Concluir
+            </button>
+        </div>
+    </form>
+</div>

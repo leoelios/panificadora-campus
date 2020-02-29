@@ -5,23 +5,23 @@
         <input type="text" id="inp-search-product" name="q" class="search">
     </form>
 </div>
+{{success}}
 <div class="index-products">
     {{#each products}}
-        <div class="product-item">
-            <div class="right">
-                <img src="https://res.cloudinary.com/dpbse0jxf/image/upload/v1582907444/lb6fl6ziqsqpnb2gvi0x.jpg" alt="Fotografia do produto" class="photoProduct" />
+        <a href="/painel/produto/info/{{_id}}">
+            <div class="product-item">
+                <div class="right">
+                    <img class="imageProduct" src="{{imgUrl}}" />
+                </div>
+                <div class="left">
+                    <h2 class="nameProduct">
+                        {{name}}
+                    </h2>
+                    <span class="priceProduct">
+                        R$ {{price}}
+                    </span>
+                </div>
             </div>
-            <div class="left">
-                <h2 class="nameProduct">
-                    {{name}}
-                </h2>
-                <p>
-                    {{desc}}
-                </p>
-                <span class="priceProduct">
-                    R$ {{price}}
-                </span>
-            </div>
-        </div>
+        </a>
     {{/each}}
 </div>
