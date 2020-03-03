@@ -1,0 +1,51 @@
+<h1 class="title-sec-product">Cadastre um novo produto</h1>
+<div class="form-control">
+    <form class="form-total" enctype='multipart/form-data'  action="/painel/produtos/cadastro" method="POST">
+        <div class="image-multi">
+            <label for="inp-image">
+                <div class="display-image">
+                    <span id="text-preview-image">
+                        <i class="far fa-image"></i>
+                    </span>
+                    <img id="img-previewed" src="" alt="Pré-visualização do produto">
+                </div>
+            </label>
+            <div class="input-camp">
+                <label for="inp-image" class="input-image-label">Escolher imagem</label>
+                <input id="inp-image" type="file" name="img">
+            </div>
+        </div>
+        <div class="input-text">
+            <h2 class="title-text">Sobre o produto</h2>
+            <div class="inp-prod">
+                <label class="label-product" for="name-product">Nome do Produto</label>
+                <input spellcheck="false" type="text" class="inp-product" name="name">
+            </div>
+            <div class="inp-prod">
+                <label class="label-product" for="desc-product">Descrição</label>
+                <textarea 
+                    class="inp-desc" 
+                    placeholder="Descreva sobre o novo produto a ser adicionado" 
+                    name="desc"
+                    spellcheck="false"
+                ></textarea>
+            </div>
+            <div class="inp-prod inp-prod-price">
+                <div class="input-dollar inp-product">
+                    <h3 class="label-input-dollar">R$</h3>
+                    <input 
+                        min="1"
+                        class="price-prod" 
+                        type="number" 
+                        name="price" 
+                        step="any"
+                        placeholder="00.00"
+                    />
+                </div>
+            </div>
+            <button class="btn-submit-prod">Cadastrar produto</button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/dashboard/previewImage.js"></script>

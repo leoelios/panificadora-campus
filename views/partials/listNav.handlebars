@@ -7,9 +7,15 @@
 <a href="/encomenda">
     <li>Produtos</li>
 </a>
-<a href="/cliente/login">
-    <li>Login</li>
-</a>
 <a class="nav-btn" href="/cliente/cadastro">
     <li>Fazer encomenda</li>
 </a>
+{{#if client}}
+    <a class="nav-btn" href="/cliente/painel">
+        <li>{{client.name}}</li>
+    </a>
+{{else}}
+    <a href="/cliente/login">
+        <li>Login</li>
+    </a>
+{{/if}}

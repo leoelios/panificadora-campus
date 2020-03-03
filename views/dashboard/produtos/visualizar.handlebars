@@ -1,0 +1,27 @@
+<h1 class="title-sec-product">Visualizar</h1>
+<div class="search-products">
+    <i class="fas fa-search"></i>
+    <form action="/painel/produtos/visualizar" method="GET" class="form-search">
+        <input type="text" id="inp-search-product" name="q" class="search">
+    </form>
+</div>
+{{success}}
+<div class="index-products">
+    {{#each products}}
+        <a href="/painel/produto/info/{{_id}}">
+            <div class="product-item">
+                <div class="right">
+                    <img class="imageProduct" src="{{imgUrl}}" />
+                </div>
+                <div class="left">
+                    <h2 class="nameProduct">
+                        {{name}}
+                    </h2>
+                    <span class="priceProduct">
+                        R$ {{price}}
+                    </span>
+                </div>
+            </div>
+        </a>
+    {{/each}}
+</div>

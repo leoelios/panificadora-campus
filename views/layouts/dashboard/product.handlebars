@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard/produto.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <script src="https://kit.fontawesome.com/e26c2674eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/dashboard/index.css">
+    <link rel="stylesheet" href="/css/dashboard/animation.css">
+    <title>Campus Ville - Produtos</title>
+</head>
+
+<body>
+    <div class="content-full-dashboard">
+        {{>dashboard/header}}
+        <div class="dashboard-content">
+            <div class="main-products">
+                <div class="menu-products">
+                    <a class="menu-product-item" href="/painel/produtos/cadastro">
+                        Cadastrar novo produto
+                    </a>
+                    <a class="menu-product-item" href="/painel/produtos/visualizar">
+                        Visualizar produtos
+                    </a>
+                </div>
+                <div class="display-content">
+                    {{{body}}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
