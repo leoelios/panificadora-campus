@@ -43,4 +43,7 @@ router.post('/cadastro', async (req, res) => {
     })
 
 })
+router.get('/painel', (req, res)=>{
+    res.render('client/panel');
+})
 module.exports = router;
