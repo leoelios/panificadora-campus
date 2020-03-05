@@ -1,0 +1,51 @@
+.content-full-margin{
+    padding: 0;
+}
+body{
+    background-color:#1A1A1A;
+}
+.back{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width: 55%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.numero{
+    color: rgb(121, 190, 154);
+    font-family: 'Roboto', sans-serif;
+    font-size: 7em;
+}
+img{
+    width: 170px;
+    height: 100%;
+}
+h2{
+    color: #FEFEFE;
+    font-size: 3em;
+}
+h3{
+    color: #FEFEFE;
+    font-size: 2.5em;
+    padding-bottom: 46px;
+}
+button{
+    font-size: 2em;
+    padding: 10px 46px;
+    border-radius: 26px;
+    background-color: #E19FC7;
+    border: none;
+    box-shadow: -1px 10px 7px rgb(121, 56, 95);
+    transition: 0.2s;
+}
+button:hover{
+    padding: 8px 38px;
+}
