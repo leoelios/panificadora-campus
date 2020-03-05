@@ -44,22 +44,51 @@ router.get('/clientes', (req, res) => {
 })
 
 
-router.get('/encomendas', (req,res) => {
+router.get('/encomendas', async (req,res) => {
     // Receber parametro via route params e realizar o filtro dos pedidos
     // de acordo com o parametro passado!
-    res.render('dashboard/encomendas', {
-        layout: 'dashboard'
+    await api.get('/order/index').then( (respApi) => {
+        const { status } = respApi.data;
+        if(status == 1) {
+            res.render('dashboard/encomendas', {
+                layout: 'dashboard',
+                orders: respApi.data.orders,
+            })
+        } else {
+            res.render('dashboard/encomendas', {
+                layout: 'dashboard',
+            })
+        }
+    }).catch( () => {
+        res.send('Error on request orders');
     })
 })
 
 
-router.get('/encomenda/:id', (req,res) => {
+router.get('/encomenda/:id', async (req,res) => {
     // Implementar algoritmo para receber o ID do pedido e
     // buscar na db o pedido e inserir os dados para dentro do handlebars
-    res.render('dashboard/visualizarEncomenda', {
-        layout: 'dashboard'
+    await api.get('/order/show', {
+        data: {
+            id: req.params.id,
+        }
+    }).then( (respApi) => {
+        const { status } = respApi.data;
+        if(status == 1) {
+            const { orderTotal } = respApi.data;
+            res.render('dashboard/visualizarEncomenda', {
+                layout: 'dashboard',
+                client: orderTotal.client,
+                order: orderTotal.order,
+            })
+        } else {
+            res.redirect('/painel');
+            req.flash('error', respApi.data.error);
+        }
+    }).catch( (errApi) => {
+        console.log(errApi);
+        res.send('Error on load Order in API: \n'+errApi);
     })
-    console.log(req.params);
 })
 
 
@@ -79,7 +108,7 @@ router.post('/produtos/cadastro', multer(multerConfig).single('img'), async (req
     const { name, desc, price } = req.body;
     // Saving the image in cloudinary
         if(!req.file) {
-            pathImage = "https://res.cloudinary.com/dpbse0jxf/image/upload/v1582902017/grdfiilp42mhwthwucsq.jpg";
+            pathImage = "https://res.cloudinary.com/dpbse0jxf/image/upload/v1582990973/inla7fxtrhqecgyqtn8r.png";
         } else {
             pathImage = req.file.path;
         }
