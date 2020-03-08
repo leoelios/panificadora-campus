@@ -146,16 +146,27 @@ body {
     padding: 20px;
     background-color: rgb(233, 233, 233);
     border-radius: 20px;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 250px;
+}
+
+.text-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .pic-product {
     margin-bottom: 10px;
     width: 220px;
-    background-color: rgb(196, 196, 196);
     border-radius: 20px;
-    height: 150px;
+}
+
+.pic-product-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .name-product {

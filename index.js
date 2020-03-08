@@ -62,6 +62,11 @@ const verifyLogIn = require('./helpers/isAdmin');
     app.use('/cliente', clientRt);
     app.use('/encomenda', encomendaRt);
     app.use('/painel', verifyLogIn, adminRt);
+    app.get('*', (req,res) => {
+        res.render('home/404', {
+            layout: "clear"
+        })
+    })
 
 app.listen(PORT, () => {
     console.log('servidor aberto na porta: '+PORT);

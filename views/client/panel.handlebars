@@ -1,29 +1,38 @@
 <link rel="stylesheet" href="/css/client/panel.css">
 <div class="centered-acess">
-    <div class="central-btn">
-        <h1 class="title-pedidos">Pedidos</h1>
-    </div>
-    <div class="list-pedidos">
-            <div class="items">
-                <div class="itemPedido">
-                    <p>Estado</p>
-                    <p><i class="fas fa-rss"></i></p>
+    {{#if order}}
+        <div class="central-btn">
+            <h1 class="title-pedidos">Último pedido realizado</h1>
+        </div>
+        <div class="list-pedidos">
+                <div class="items">
+                    <div class="itemPedidoLine">
+                        <p>Estado</p>
+                        <p class="state-order">{{order.state}}</p>
+                    </div>
+                    <div class="itemPedidoLine">
+                        <p>Pagamento</p>
+                        <p class="state-payment">{{order.statePayment}}</p>
+                    </div>
+                    <div class="itemPedido">
+                        <p>Produtos do pedido</p>
+                        <div class="produtos_pedido">
+                            {{#each order.list}}
+                                <div class="produto-item">
+                                    <p>{{nameProduct}} | Qnt: {{quantProduct}}</p>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    <div class="itemPedidoLine">
+                        <p>Total</p>
+                        <p class="total-price"> R$ {{order.totalPrice}}</p>
+                    </div>
                 </div>
-                <hr>
-                <div class="itemPedido">
-                    <p>Produtos</p>
-                    <p>Coca-Cola</p>
-                </div>
-                <hr>
-                <div class="itemPedido">
-                    <p>Quantidade</p>
-                    <p>1x</p>
-                </div>
-                <hr>
-                <div class="itemPedido">
-                    <p>Valor</p>
-                    <p>R$ 7.50</p>
-                </div>
-            </div>
-    </div>
+        </div>
+    {{else}}
+        <div class="order-not-found">
+            <h1>Nenhum pedido foi encontrado em sua conta!</h1>
+        </div>
+    {{/if}}
 </div>

@@ -8,11 +8,28 @@ body{
     flex-direction: column;
     align-items: center;
     animation: slug-element 0.3s;
+    padding-bottom: 30px;
+}
+
+.state-order {
+    color: rgb(76, 150, 42);
+}
+
+.order-not-found {
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.total-price {
+    color: rgb(70, 70, 70);
+}
+
+.state-payment {
+    color: rgb(136, 136, 136);
 }
 
 .central-btn {
     width: 80%;
-    background-color: rgb(174, 185, 214);
     border-radius: 40px;
     text-align: center;
     margin-top: 40px;
@@ -27,7 +44,18 @@ body{
 .title-pedidos {
     margin-bottom: 30px;
     font-weight: 100;
-    font-size: 2.5em;
+    font-size: 1.5em;
+}
+
+.produtos_pedido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.produto-item {
+    display: flex;
+    flex-direction: row;
 }
 
 .list-pedidos {
@@ -35,15 +63,14 @@ body{
     padding: 20px;
     border-radius: 30px;
     width: 80%;
-    background-color: #AEB9D6;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 0.5s;
 }
 
 .list-pedidos:hover{
-    width: 75%;
+    border: 3px solid #AEB9D6;
 }
 
 .pedidos{
@@ -62,8 +89,17 @@ body{
     padding: 5px 20px;
 }
 .itemPedido{
+    background-color: rgba(225, 236, 255, 0.479);
+    border-radius: 5px;
     padding: 16px 16px;
     display: flex;
+    flex-direction: column;
+}
+
+.itemPedidoLine {
+    padding: 16px 16px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .lista-pedidos td{

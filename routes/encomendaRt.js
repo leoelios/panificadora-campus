@@ -1,11 +1,23 @@
 const express = require('express');
 const router = express.Router();
+const api = require('../services/api');
 
 router.get('/', (req,res) => {
-    res.render('client/encomendas/confeitaria', {
-        layout: 'client/encomenda',
-        nameCategory: 'Confeitaria - Doces',
-    });
+    api.get('/product/mostrar').then( ({data}) => {
+        if(data.status == 1) {
+            res.render('client/encomendas/confeitaria', {
+                layout: 'client/encomenda',
+                nameCategory: 'Confeitaria - Panificadora',
+                products: data.products,
+            });
+        } else {
+            res.render('client/encomendas/confeitaria', {
+                layout: 'client/encomenda',
+            });
+        }
+    }).catch( (err) => {
+        console.log(err);
+    })
 })
 
 module.exports = router;

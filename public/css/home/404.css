@@ -1,7 +1,8 @@
 .content-full-margin{
     padding: 0;
 }
-body{
+body,html{
+    height: 100%;
     background-color:#1A1A1A;
 }
 .back{
@@ -26,7 +27,6 @@ body{
 }
 img{
     width: 170px;
-    height: 100%;
 }
 h2{
     color: #FEFEFE;
@@ -48,4 +48,24 @@ button{
 }
 button:hover{
     padding: 8px 38px;
+}
+
+@media (max-width: 800px) {
+    img {
+        width: 100px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3{
+        color: #FEFEFE;
+        font-size: 1.5em;
+        padding-bottom: 46px;
+    }
+    button {
+        font-size: 1.5em;
+    }
 }
