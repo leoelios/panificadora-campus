@@ -48,3 +48,8 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus
     display: flex;
     flex-direction: column;
 }
+
+::selection {
+    background: rgb(87, 65, 53);
+    color: rgb(235, 206, 163);
+}

@@ -7,7 +7,6 @@ router.get('/', (req,res) => {
         if(data.status == 1) {
             res.render('client/encomendas/confeitaria', {
                 layout: 'client/encomenda',
-                nameCategory: 'Confeitaria - Panificadora',
                 products: data.products,
             });
         } else {

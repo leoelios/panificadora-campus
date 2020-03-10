@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(230, 232, 236);
+    background-color: #38261f;
 }
 
 .centered-acess {
@@ -42,6 +42,7 @@ body{
 }
 
 .title-pedidos {
+    color: #fff;
     margin-bottom: 30px;
     font-weight: 100;
     font-size: 1.5em;
@@ -58,8 +59,12 @@ body{
     flex-direction: row;
 }
 
+.produto-item p {
+    color: rgb(136, 136, 136);
+}
+
 .list-pedidos {
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 30px;
     width: 80%;
@@ -67,10 +72,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.list-pedidos:hover{
-    border: 3px solid #AEB9D6;
 }
 
 .pedidos{
