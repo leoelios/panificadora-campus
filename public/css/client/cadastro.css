@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(85, 160, 154);
+    background-color: #38261f;
 }
 
 * {
@@ -30,7 +30,6 @@ body {
     transition: width 1s;
     overflow: hidden;
     padding: 20px;
-    background-color: rgb(69, 132, 138);
     display: flex;
     flex-direction: column;
     justify-content: center;

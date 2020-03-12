@@ -17,9 +17,14 @@ p{
     padding: 30px;
 }
 
+.right p {
+    font-weight: 100;
+}
+
 .centralizada{
     width: 76%;
-    background-color: #614242;
+    padding: 20px;
+    background-color: #422d24;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 1fr 1fr;
@@ -59,5 +64,5 @@ p{
 }
 
 body{
-    background-color: #B89473;
+    background-color: #38261f;
 }

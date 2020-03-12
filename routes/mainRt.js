@@ -24,5 +24,4 @@ router.post('/login' , (req, res, next) => {
     })(req, res, next);
 })
 
-//>>>>>>> f5437aa11de5b5e1043dcbfedfb5f2c189a8fb6f
 module.exports = router;

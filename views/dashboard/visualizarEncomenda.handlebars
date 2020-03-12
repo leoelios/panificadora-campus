@@ -12,18 +12,18 @@
                 <div class="product-item-ld"></div>
             </div>
             <div class="box-encomenda-real real">
-                <h4 class="name-client">Carlos Alberto de Nobrega</h4>
+                <h4 class="name-client">{{client.name}} {{client.surname}}</h4>
                 <span>
                     <span class="wei-nu">
                         Email
                     </span>
-                    : carlos@gmail.com
+                    : {{client.email}}
                 </span>
                 <span>
                     <span class="wei-nu">
                         Cel.
                     </span>
-                    : (16) 99379-8356
+                    : {{client.cel}}
                 </span>
             </div>
         </div>
@@ -36,13 +36,13 @@
                 <h4 class="name-client">Logradouro</h4>
                 <div class="localization">
                     <span>
-                        Rua Coronel Pinto Ferraz, 45
+                        {{client.address}}
                     </span>
                     <span>
-                        Ribeirão Bonito - SP
+                        {{client.city}} - {{client.state}}
                     </span>
                     <span>
-                        CEP: 13580-000
+                        CEP: {{client.cep}}
                     </span>
                 </div>
             </div>
@@ -55,21 +55,13 @@
             <div class="product-item-ld"></div>
         </div>
         <div class="list-products-real real">
-            <div class="list-item">
-                <img src="/img/donut.jpg" class="img-product">
-                <h4 class="title-prod">Nome do Produto</h4>
-                <span>Quantidade: 3</span>
-            </div>
-            <div class="list-item">
-                <img src="/img/donut.jpg" class="img-product">
-                <h4 class="title-prod">Nome do Produto</h4>
-                <span>Quantidade: 3</span>
-            </div>
-            <div class="list-item">
-                <img src="/img/donut.jpg" class="img-product">
-                <h4 class="title-prod">Nome do Produto</h4>
-                <span>Quantidade: 3</span>
-            </div>
+            {{#each order.list}}
+                <div class="list-item">
+                    {{!-- <img src="/img/donut.jpg" class="img-product"> --}}
+                    <h4 class="title-prod">{{nameProduct}}</h4>
+                    <span>Quantidade: {{quantProduct}}</span>
+                </div>
+            {{/each}}
         </div>
     </div>
 </div>

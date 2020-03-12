@@ -26,91 +26,30 @@
                     Estado
                 </td>
                 <td>
-                    Nome Cliente
+                    Qnt.Item
                 </td>
                 <td>
-                    Endereço
-                </td>
-                <td>
-                    Status
+                    Estado Pagamento
                 </td>
             </tr>
-            <tr class="body-line">
-                <td>
-                    <i class="fas fa-rss"></i>
-                </td>
-                <td>
-                    Victor Pizzaia
-                </td>
-                <td>
-                    Rua josefino Almeida do campos
-                </td>
-                <td class="status-pag">
-                    Pagamento Efetuado
-                </td>
-                <td class="link-acess-data">
-                    <a href="/painel/encomenda/pizzaia" class="link-pedido">
-                        <i class="fas fa-eye icon-see"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr class="body-line">
-                <td>
-                    <i class="fas fa-rss"></i>
-                </td>
-                <td>
-                    Victor Pizzaia
-                </td>
-                <td>
-                    Rua josefino Almeida do campos
-                </td>
-                <td class="status-pag">
-                    Pagamento Efetuado
-                </td>
-                <td class="link-acess-data">
-                    <a href="/painel/encomenda/pizzaia" class="link-pedido">
-                        <i class="fas fa-eye icon-see"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr class="body-line">
-                <td>
-                    <i class="fas fa-rss"></i>
-                </td>
-                <td>
-                    Victor Pizzaia
-                </td>
-                <td>
-                    Rua josefino Almeida do campos
-                </td>
-                <td class="status-pag">
-                    Pagamento Efetuado
-                </td>
-                <td class="link-acess-data">
-                    <a href="/painel/encomenda/pizzaia" class="link-pedido">
-                        <i class="fas fa-eye icon-see"></i>
-                    </a>
-                </td>
-            </tr>
-            <tr class="body-line">
-                <td>
-                    <i class="fas fa-rss"></i>
-                </td>
-                <td>
-                    Victor Pizzaia
-                </td>
-                <td>
-                    Rua josefino Almeida do campos
-                </td>
-                <td class="status-pag">
-                    Pagamento Efetuado
-                </td>
-                <td class="link-acess-data">
-                    <a href="/painel/encomenda/pizzaia" class="link-pedido">
-                        <i class="fas fa-eye icon-see"></i>
-                    </a>
-                </td>
-            </tr>
+            {{#each orders}}
+                <tr class="body-line">
+                    <td>
+                        {{state}}
+                    </td>
+                    <td>
+                        {{list.length}}
+                    </td>
+                    <td class="status-pag">
+                        {{statePayment}}
+                    </td>
+                    <td class="link-acess-data">
+                        <a href="/painel/encomenda/{{_id}}" class="link-pedido">
+                            <i class="fas fa-eye icon-see"></i>
+                        </a>
+                    </td>
+                </tr>
+            {{/each}}
         </table>
     </div>
 </div>

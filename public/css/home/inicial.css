@@ -41,7 +41,7 @@
 .attr-padaria {
     padding: 100px 0;
     width: 100%;
-    background-color: rgb(70, 48, 28);
+    background-color: #3F2B22;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +125,7 @@
     margin: 10px;
     width: 300px;
     height: 200px;
-    background-color: rgb(78, 63, 49);
+    background-color: #D6A965;
     border-radius: 20px;
     overflow: hidden;
     transition: height 0.7s, width 1s, padding 0.3s;
@@ -139,7 +139,7 @@
 }
 
 .text-service {
-    color: rgb(233, 233, 233);
+    color: #3F2B22;
     font-size: 1.3em;
 }
 

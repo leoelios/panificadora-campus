@@ -1,5 +1,5 @@
 .title-sec {
-    background-color: rgb(74, 164, 192);
+    background-color: #3F2B22;
     padding: 20px;
     top: 0;
     padding-top: 120px;
@@ -23,7 +23,7 @@ body {
 
 .aside-category {
     padding: 30px 0px;
-    background-color: rgb(61, 49, 37);
+    background-color: #B3856F;
     width: 300px;
     border-radius: 20px;
     display: flex;
@@ -44,7 +44,7 @@ body {
 
 .category {
     width: 80%;
-    background-color: rgb(74, 164, 192);
+    background-color: #3F2B22;
     border-radius: 20px;
     padding: 15px;
     display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 .category:hover {
-    background-color: rgb(76, 178, 209);
+    background-color: rgb(48, 33, 26);
 }
 
 .category-title-aside {
@@ -108,7 +108,7 @@ body {
 }
 
 .link-item-cat:hover {
-    background-color: rgb(167, 194, 202);
+    background-color: rgb(223, 223, 223);
 }
 
 .sec-main {
@@ -144,18 +144,34 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(216, 176, 155);
     border-radius: 20px;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 250px;
+    transition: background 0.3s;
+}
+
+.product-item:hover {
+    background-color: rgb(219, 173, 146);
+}
+
+.text-context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .pic-product {
     margin-bottom: 10px;
     width: 220px;
-    background-color: rgb(196, 196, 196);
     border-radius: 20px;
-    height: 150px;
+}
+
+.pic-product-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .name-product {
@@ -180,6 +196,14 @@ body {
         top: 0;
         padding-top: 150px;
         position: absolute;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 663px) {
+    .product-item {
+        max-width: none;
         width: 100%;
     }
 }

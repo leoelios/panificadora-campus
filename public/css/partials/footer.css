@@ -1,5 +1,5 @@
 .footer-full {
-    background-color: rgb(194, 160, 115);
+    background-color: #38261f;
     padding: 40px 20px;
     display: flex;
     width: 100%;
@@ -9,7 +9,7 @@
 }
 
 .name-campus {
-    color: rgb(20, 74, 78);
+    color: #FFDDB2;
     cursor: pointer;
 }
 
@@ -19,20 +19,32 @@
 }
 
 .loc-end {
+    color: #FFDDB2;
     margin: 10px 30px 30px 30px;
 }
 
 .logo-footer {
-    width: 200px;
+    width: 100px;
+}
+
+.info-title {
+    color: rgb(247, 227, 201);
 }
 
 .copy-right {
+    color: #FFDDB2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
+
+.method-payment {
+    margin-top: 30px;
+    width: 400px;
+}
+
 @media(max-width: 700px){
     .copy-right{
         display: none;

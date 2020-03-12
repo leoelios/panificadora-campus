@@ -88,12 +88,18 @@ html,body {
     display: none;
 }
 
+#msg-error-upload {
+    margin: 10px;
+    color: #0C0D1D;
+}
+
 .input-image-label {
     background-color: #3273AC;
     padding: 10px 30px;
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
+    text-align: center;
 }
 
 .input-image-label:hover {
@@ -103,6 +109,7 @@ html,body {
 .input-camp {
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -282,12 +289,12 @@ html,body {
 .box-content-about-product {
     margin-top: 10px;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: slug-element 0.3s;
 }
 
 .img-and-config {
